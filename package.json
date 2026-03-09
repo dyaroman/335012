@@ -8,7 +8,8 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build"
+    "type-check": "vue-tsc --build",
+    "prepare": "husky || true"
   },
   "dependencies": {
     "vue": "^3.5.29"
@@ -18,7 +19,10 @@
     "@types/node": "^24.11.0",
     "@vitejs/plugin-vue": "^6.0.4",
     "@vue/tsconfig": "^0.8.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.2",
     "npm-run-all2": "^8.0.4",
+    "prettier": "^3.8.1",
     "typescript": "~5.9.3",
     "vite": "^7.3.1",
     "vite-plugin-vue-devtools": "^8.0.6",
